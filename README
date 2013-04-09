@@ -1,0 +1,24 @@
+电机魂，寓意“创新是电机的灵魂”，是一款基于WordPress、BuddyPress和CollabPress进行整合和二次开发的Web开源群件系统。
+
+安装方法很简单：
+一、把djh目录里面的文件放到Web服务器的目录里面，最好是Web服务器的根目录，当然也可以是vhost的根目录。
+一般Linux的Web服务器的根目录是/srv/http
+
+二、修改wp-config.php文件，填写相应的MariaDB/Percona/MySQL服务器信息，如数据库名称、用户名、密码等。
+电机魂默认的数据库名称是djh，用户名是root，密码是sdju19532013
+
+三、把djh.sql数据库文件导入到对应的数据库里，导入前请确保数据库已存在。
+mysql -u root -p -e 'create database djh charset utf8'
+mysql -u root -p djh < djh.sql
+
+四、打开相关网页，登陆系统，在常规设置里把URL修改为对应的地址即可。
+电机魂的默认登陆账号是sdju，密码是19532013
+电机魂默认的地址是http://dj.Red54.com
+
+
+WordPress	http://wordpress.org
+BuddyPress	http://buddypress.org
+CollabPress	http://collabpress.org
+上海电机学院	http://www.sdju.edu.cn
+红色动力		http://Red54.com
+联合提供动力

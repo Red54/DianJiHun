@@ -1,0 +1,856 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CollabPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-30 14:35+0100\n"
+"PO-Revision-Date: 2013-04-09 19:30+0800\n"
+"Last-Translator: 谢致邦 <Yeking@Red54.com>\n"
+"Language-Team: 谢致邦 <Yeking@Red54.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"Language: zh_CN\n"
+"X-Poedit-SearchPath-0: /Users/scottbasgaard/Sites/collabpress/wp-content/"
+"plugins/collabpress\n"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/admin_init.php:61
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:180
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:222
+msgid "Projects"
+msgstr "项目"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/admin_init.php:62
+msgid "Custom Post Type for CollabPress Projects"
+msgstr "自定义 CollabPress 项目的文章类型"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/admin_init.php:71
+msgid "Task Lists"
+msgstr "任务清单"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/admin_init.php:72
+msgid "Custom Post Type for CollabPress Task Lists"
+msgstr "自定义 CollabPress 任务清单的文章类型"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/admin_init.php:81
+msgid "Tasks"
+msgstr "任务"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/admin_init.php:82
+msgid "Custom Post Type for CollabPress Tasks"
+msgstr "自定义 CollabPress 任务的文件类型"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/admin_init.php:91
+msgid "Meta Data"
+msgstr "元数据"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/admin_init.php:92
+msgid "Custom Post Type for CollabPress Meta Data"
+msgstr "自定义 CollabPress 元数据的文件类型"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-core.php:25
+msgid "View Dashboard"
+msgstr "查看控制面板"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-core.php:37
+msgid "CollabPress - Recent Activity"
+msgstr "CollabPress - 最近活动"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:17
+msgid "Display CollabPress overview stats"
+msgstr "显示 CollabPress 概述统计表"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:19
+msgid "CollabPress: Overview Widget"
+msgstr "CollabPress：概述 小工具"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:24
+msgid "CollabPress Overview"
+msgstr "CollabPress 概述"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:33
+msgid "Title"
+msgstr "主题"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:34
+msgid "Show Project Count"
+msgstr "显示项目统计"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:35
+msgid "Show Task List Count"
+msgstr "显示任务清单统计"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:36
+msgid "Show Task Count"
+msgstr "显示任务统计"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:37
+msgid "Show User Count"
+msgstr "显示用户统计"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:73
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:350
+msgid "Project"
+msgstr "项目"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:80
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:355
+msgid "Task List"
+msgstr "任务清单"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:87
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:360
+msgid "Task"
+msgstr "任务"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:93
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:364
+msgid "User"
+msgstr "用户"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/footer.php:2
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:71
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/footer.php:2
+msgid "CollabPress"
+msgstr "CollabPress"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/footer.php:2
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/footer.php:2
+msgid "Please Report Bugs"
+msgstr "请汇报漏洞"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/footer.php:2
+msgid "Follow us on Twitter: "
+msgstr "请收听我们："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/footer.php:2
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/footer.php:2
+msgid "Scott"
+msgstr ""
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/footer.php:2
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/footer.php:2
+msgid "Brad"
+msgstr ""
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/footer.php:2
+msgid "Chris"
+msgstr ""
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/footer.php:2
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/footer.php:2
+msgid "WDS"
+msgstr ""
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:24
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:44
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:67
+msgid "Back"
+msgstr "后退"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:32
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:52
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:79
+msgid "Edit"
+msgstr "编辑"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:75
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:103
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:71
+msgid "CollabPress Dashboard"
+msgstr "CollabPress 控制面板"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:79
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:284
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1218
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:195
+msgid ""
+"WARNING: This will delete the selected project, including ALL task lists and "
+"tasks in the project.\\n\\nChoose [Cancel] to Stop, [OK] to delete.\\n"
+msgstr "警告：这将会删除所选的项目，包括这个项目的所有任务清单和任务。\\n"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:79
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:52
+msgid "Delete"
+msgstr "删除"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:95
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:221
+msgid "Calendar"
+msgstr "日程表"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:99
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:295
+msgid "View All Projects"
+msgstr "查看所有项目"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:131
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:137
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:146
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:150
+msgid "Dashboard"
+msgstr "控制面板"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:172
+msgid "Powered by "
+msgstr "动力提供"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:172
+msgid "CollabPress.org"
+msgstr "CollabPress.org"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:185
+msgid "Project Added"
+msgstr "项目已添加"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:189
+msgid "Project Updated"
+msgstr "项目已更新"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:193
+msgid "Project Deleted"
+msgstr "项目已删除"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:197
+msgid "Task List Added"
+msgstr "任务清单已添加"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:201
+msgid "Task List Updated"
+msgstr "任务清单已更新"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:205
+msgid "Task List Deleted"
+msgstr "任务清单已删除"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:209
+msgid "Task Added"
+msgstr "任务已添加"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:213
+msgid "Task Updated"
+msgstr "任务已更新"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:217
+msgid "Task Deleted"
+msgstr "任务已删除"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:221
+msgid "Comment Added"
+msgstr "评论已添加"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:225
+msgid "Acitivity Log Has Been Cleared"
+msgstr "活动日志已被清除"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:232
+msgid "Activity"
+msgstr "活动"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:255
+msgid "View Calendar"
+msgstr "查看日程表"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:284
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:659
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1218
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:195
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:330
+msgid "edit"
+msgstr "编辑"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:284
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:659
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:837
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:953
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1218
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:195
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:251
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:330
+msgid "delete"
+msgstr "删除"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:292
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1226
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:209
+msgid "No Projects..."
+msgstr "没有项目……"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:337
+msgid "View All Users"
+msgstr "查看所有用户"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:374
+msgid "Click to Upload"
+msgstr "点击上传"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:398
+msgid "No file attachments..."
+msgstr "没有附件……"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:462
+msgid "No Activities..."
+msgstr "没有活动……"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:529
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:578
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:754
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:789
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:865
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:902
+msgid "Description: "
+msgstr "描述："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:538
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:587
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:655
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:710
+msgid "Due: "
+msgstr "截止："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:542
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:591
+msgid "Assigned to: "
+msgstr "分配给："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:552
+msgid "Notify via Email? "
+msgstr "通过邮件通知？"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:558
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:604
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:765
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:800
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:876
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:913
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:980
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:109
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:112
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:115
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:118
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:121
+msgid "Submit"
+msgstr "提交"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:620
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1033
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:272
+msgid "Current Tasks"
+msgstr "当前任务"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:659
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:330
+msgid ""
+"WARNING: This will delete the selected task.\\n\\nChoose [Cancel] to Stop, "
+"[OK] to delete.\\n"
+msgstr "警告：这将会删除所选的任务。\\n"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:670
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1051
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:339
+msgid "No Tasks..."
+msgstr "没有任务……"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:678
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:347
+msgid "Completed Tasks"
+msgstr "已完成的任务"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:724
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:410
+msgid "No Tasks Completed..."
+msgstr "没有任务已完成……"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:750
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:785
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:861
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:898
+msgid "Name: "
+msgstr "名称："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:820
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:233
+msgid "Tasks Lists"
+msgstr "任务清单"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:837
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:251
+msgid ""
+"WARNING: This will delete the selected task list and all tasks in the list."
+"\\n\\nChoose [Cancel] to Stop, [OK] to delete.\\n"
+msgstr "警告：这将会删除所选的任务清单和清单的所有任务。\\n"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:843
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:257
+msgid "No Task Lists..."
+msgstr "没有任务清单……"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:953
+msgid ""
+"WARNING: This will delete the selected comment.\\n\\nChoose [Cancel] to "
+"Stop, [OK] to delete.\\n"
+msgstr "警告：这将会删除所选的评论。\\n"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:964
+msgid "No comments..."
+msgstr "没有评论……"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:976
+msgid "Leave a Comment: "
+msgstr "留一个评论"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:978
+msgid "Notify via Email?"
+msgstr "通过邮件通知？"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1000
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:228
+msgid "Recent Activity"
+msgstr "最近活动"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1030
+msgid "No Recent Activity..."
+msgstr "没有最近活动……"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1048
+msgid " - View"
+msgstr " - 查看"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1104
+msgid "Sunday"
+msgstr "周日"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1104
+msgid "Monday"
+msgstr "周一"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1104
+msgid "Tuesday"
+msgstr "周二"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1104
+msgid "Wednesday"
+msgstr "周三"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1104
+msgid "Thursday"
+msgstr "周四"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1104
+msgid "Friday"
+msgstr "周五"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1104
+msgid "Saturday"
+msgstr "周六"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/functions.php:1197
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:127
+msgid "All Projects"
+msgstr "所有项目"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:326
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:401
+msgid "Assigned to:"
+msgstr "分配给："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:326
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/shortcode.php:401
+msgid " Due: "
+msgstr "截止："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:78
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:7
+msgid "CollabPress Settings"
+msgstr "CollabPress 设置"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:78
+msgid "Settings"
+msgstr "设置"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:83
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:7
+msgid "CollabPress Help"
+msgstr "CollabPress 帮助"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:83
+msgid "Help"
+msgstr "帮助"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:88
+msgid "Debug"
+msgstr "调试"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:223
+msgid "Users"
+msgstr "用户"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:224
+msgid "Overview"
+msgstr "概述"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:229
+msgid "Add New Project"
+msgstr "添加新的项目"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:230
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:241
+msgid "Edit Project"
+msgstr "编辑项目"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:236
+msgid "Add New Task List"
+msgstr "添加新的任务清单"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:237
+msgid "Edit Task List"
+msgstr "编辑任务清单"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:238
+msgid "Project Overview"
+msgstr "项目概述"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:240
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:251
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:259
+msgid "Files"
+msgstr "文件"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:247
+msgid "Add New Task"
+msgstr "添加新的任务"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:248
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:257
+msgid "Edit Task"
+msgstr "编辑任务"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:249
+msgid "Task List Overview"
+msgstr "任务清单概述"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:263
+msgid "Credits"
+msgstr "鸣谢"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:343
+msgid "Cheatin&#8217; uh?"
+msgstr ""
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:10
+msgid "Title: "
+msgstr "主题："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:12
+msgid "ID: "
+msgstr "ID："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:14
+msgid "Author: "
+msgstr "作者："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:16
+msgid "Created: "
+msgstr "创建于："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:16
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:18
+msgid "at"
+msgstr "在"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:18
+msgid "Modified: "
+msgstr "修改于："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:24
+msgid "Custom Fields: collabpress"
+msgstr "自定义区域：collabpress"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:30
+msgid "name: "
+msgstr "名称："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:31
+msgid "value"
+msgstr "值"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:42
+msgid "No results..."
+msgstr "没有结果……"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:50
+msgid "CollabPress Debug"
+msgstr "CollabPress 调试"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:108
+msgid "Delete All CollabPress Data: "
+msgstr "删除所有 CollabPress 数据："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:111
+msgid "Delete CollabPress Projects: "
+msgstr "删除 CollabPress 项目："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:114
+msgid "Delete CollabPress Task Lists: "
+msgstr "删除 CollabPress 任务清单："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:117
+msgid "Delete CollabPress Tasks: "
+msgstr "删除 CollabPress 任务："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:120
+msgid "Delete CollabPress Meta Data: "
+msgstr "删除 CollabPress 元数据："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:143
+msgid "All Task Lists"
+msgstr "所有任务清单"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/debug.php:175
+msgid "All Meta"
+msgstr "所有元"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/footer.php:2
+msgid "Follow us on Twitter:"
+msgstr "收听我们："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:8
+msgid "Shortcode Legend"
+msgstr ""
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:9
+msgid ""
+"Add full CollabPress support to the front-end of WordPress.  View/edit/"
+"delete all projects, task-lists, tasks, and comments."
+msgstr ""
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:10
+msgid "Set user role"
+msgstr "设置用户角色"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:10
+msgid "for front-end [collabpress] shortcode support"
+msgstr "前端[collabpress]短码支持"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:11
+msgid "Support and Info"
+msgstr "支持信息"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:12
+msgid "Visit the"
+msgstr "访问"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:12
+msgid "CollabPress Support Forum"
+msgstr "CollabPress 支持论坛"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:12
+msgid "Follow on Twitter"
+msgstr "收听我们"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:12
+msgid "Subscribe via Email"
+msgstr "通过邮件订阅"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:13
+msgid "Donate"
+msgstr "捐助"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:14
+msgid "Please donate to the development of CollabPress:"
+msgstr ""
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:18
+msgid "PayPal - The safer, easier way to pay online!"
+msgstr ""
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:22
+msgid "Latest CollabPress News"
+msgstr "最近的 CollabPress 新闻"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/help.php:28
+msgid "CollabPress News"
+msgstr "CollabPress 新闻"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:57
+msgid "General"
+msgstr "通用"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:60
+msgid "Dashboard Meta Box"
+msgstr "控制面板 Meta Box"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:63
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:73
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:153
+msgid "Disabled"
+msgstr "停用"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:64
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:72
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:154
+msgid "Enabled"
+msgstr "启用"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:69
+msgid "Email Notifications"
+msgstr "邮件通知"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:78
+msgid "Recent Activites Per Page"
+msgstr "每页的最近活动数"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:95
+msgid "Number of Users to Display"
+msgstr "显示的用户数"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:107
+msgid "Permissions"
+msgstr "权限"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:110
+msgid "Minimum User Role for Access"
+msgstr "访问所需的最低用户角色"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:113
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:125
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:138
+msgid "Administrator"
+msgstr "管理员"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:114
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:126
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:139
+msgid "Editor"
+msgstr "编辑"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:115
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:127
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:140
+msgid "Author"
+msgstr "作者"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:116
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:128
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:141
+msgid "Contributor"
+msgstr "贡献者"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:117
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:129
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:142
+msgid "Subscriber"
+msgstr "订阅者"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:122
+msgid ""
+"Minimum User Role to change Settings, Edit/Delete data, Enable/View Debug, "
+"etc"
+msgstr "修改设置、编辑/删除数据、启用/查看调试信息等的最低用户角色"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:134
+msgid "Minimum User Role to view [collabpress] shortcode front-end"
+msgstr "查看[collabpress]短码前端的最低用户角色"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:137
+msgid "Anyone"
+msgstr "所有人"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:147
+msgid "Advanced"
+msgstr "高级"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:150
+msgid "Debug Mode"
+msgstr "调试模式"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:159
+msgid "Save Settings"
+msgstr "保存设置"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:166
+msgid "Optimize"
+msgstr "优化"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:174
+msgid "Clear Activity Log"
+msgstr "清理活动日志"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:175
+msgid "Delete Log"
+msgstr "删除日志"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/settings.php:175
+msgid ""
+"WARNING: This will delete ALL activity logs.  Once logs have been deleted "
+"they can NOT be restored.\\n\\nChoose [Cancel] to Stop, [OK] to delete logs."
+"\\n"
+msgstr "警告：这将会删除所有的活动日志。日志一被删除就无法被还原。\\n"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/comment.php:40
+msgid "New comment on task "
+msgstr "任务的新评论"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/comment.php:42
+msgid "There is a new comment on your task from "
+msgstr "您的任务有一个新评论来自"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/comment.php:43
+msgid "Comment:"
+msgstr "评论："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/comment.php:51
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/project.php:18
+msgid "added"
+msgstr "已添加"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/comment.php:51
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/comment.php:68
+msgid "comment"
+msgstr "评论"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/comment.php:68
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/project.php:98
+msgid "deleted"
+msgstr "已删除"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/project.php:18
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/project.php:40
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/project.php:98
+msgid "project"
+msgstr "项目"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/project.php:40
+msgid "updated"
+msgstr "已更新"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task-list.php:23
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task-list.php:45
+msgid "task list"
+msgstr "任务清单"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task.php:38
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task.php:78
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task.php:101
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task.php:109
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task.php:129
+msgid "task"
+msgstr "任务"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task.php:48
+msgid "New task assigned to you: "
+msgstr "分配给您的新任务："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task.php:50
+msgid "There is a new task assigned to you:"
+msgstr "有一个新的任务分配给您："
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task.php:101
+msgid "completed"
+msgstr "已完成"
+
+#: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/isset/task.php:109
+msgid "opened"
+msgstr "已打开"
