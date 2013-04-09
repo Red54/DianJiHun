@@ -1,4 +1,4 @@
-电机魂，寓意“创新是电机的灵魂”，是一款基于WordPress、BuddyPress和CollabPress进行整合和二次开发的Web开源群件系统。
+电机魂，寓意“创新是上海电机学院的灵魂”，是一款基于WordPress、BuddyPress和CollabPress进行整合和二次开发的Web开源群件系统。
 
 安装方法很简单：
 一、把djh目录里面的文件放到Web服务器的目录里面，最好是Web服务器的根目录，当然也可以是vhost的根目录。
