@@ -499,16 +499,16 @@ CREATE TABLE IF NOT EXISTS `wp_comments` (
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
 (1, 1, 'WordPress 先生', '', 'http://wordpress.org/', '', '2013-04-09 08:29:20', '2013-04-09 08:29:20', '您好，这是一条评论。\n要删除评论，请先登录，然后再查看这篇文章的评论。登录后您可以看到编辑或者删除评论的选项。', 0, '1', '', '', 0, 0),
-(2, 12, 'sdju', 'dj@Red54.com', 'dj@Red54.com', '127.0.0.1', '2013-04-09 16:43:49', '2013-04-09 08:43:49', '已完成：http://dj.red54.com/?p=41', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
-(3, 22, 'sdju', 'dj@Red54.com', 'dj@Red54.com', '127.0.0.1', '2013-04-09 16:51:01', '2013-04-09 08:51:01', '已完成：http://dj.red54.com/?p=45', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
-(4, 48, 'sdju', 'dj@Red54.com', 'dj@Red54.com', '127.0.0.1', '2013-04-09 17:42:20', '2013-04-09 09:42:20', '已完成：http://dj.red54.com/?p=65', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
-(5, 50, 'sdju', 'dj@Red54.com', 'dj@Red54.com', '127.0.0.1', '2013-04-09 17:47:03', '2013-04-09 09:47:03', '已完成：http://dj.red54.com/?p=70', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
-(6, 52, 'sdju', 'dj@Red54.com', 'dj@Red54.com', '127.0.0.1', '2013-04-09 18:07:05', '2013-04-09 10:07:05', '已完成：http://dj.red54.com/?p=75', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
-(7, 54, 'sdju', 'dj@Red54.com', 'dj@Red54.com', '127.0.0.1', '2013-04-09 18:10:04', '2013-04-09 10:10:04', '已完成：http://dj.red54.com/?p=80', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
-(8, 56, 'sdju', 'dj@Red54.com', 'dj@Red54.com', '127.0.0.1', '2013-04-09 18:14:03', '2013-04-09 10:14:03', '已完成：http://dj.red54.com/?p=85', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
-(9, 58, 'sdju', 'dj@Red54.com', 'dj@Red54.com', '127.0.0.1', '2013-04-09 18:17:03', '2013-04-09 10:17:03', '已完成：http://dj.red54.com/?p=90', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
-(10, 60, 'sdju', 'dj@Red54.com', 'dj@Red54.com', '127.0.0.1', '2013-04-09 18:19:32', '2013-04-09 10:19:32', '已完成：http://dj.red54.com/?p=95', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
-(11, 62, 'sdju', 'dj@Red54.com', 'dj@Red54.com', '127.0.0.1', '2013-04-09 18:23:28', '2013-04-09 10:23:28', '已完成：http://dj.red54.com/?p=100', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1);
+(2, 12, 'sdju', 'root@localhost', 'root@localhost', '127.0.0.1', '2013-04-09 16:43:49', '2013-04-09 08:43:49', '已完成：http://dj.red54.com/?p=41', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
+(3, 22, 'sdju', 'root@localhost', 'root@localhost', '127.0.0.1', '2013-04-09 16:51:01', '2013-04-09 08:51:01', '已完成：http://dj.red54.com/?p=45', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
+(4, 48, 'sdju', 'root@localhost', 'root@localhost', '127.0.0.1', '2013-04-09 17:42:20', '2013-04-09 09:42:20', '已完成：http://dj.red54.com/?p=65', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
+(5, 50, 'sdju', 'root@localhost', 'root@localhost', '127.0.0.1', '2013-04-09 17:47:03', '2013-04-09 09:47:03', '已完成：http://dj.red54.com/?p=70', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
+(6, 52, 'sdju', 'root@localhost', 'root@localhost', '127.0.0.1', '2013-04-09 18:07:05', '2013-04-09 10:07:05', '已完成：http://dj.red54.com/?p=75', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
+(7, 54, 'sdju', 'root@localhost', 'root@localhost', '127.0.0.1', '2013-04-09 18:10:04', '2013-04-09 10:10:04', '已完成：http://dj.red54.com/?p=80', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
+(8, 56, 'sdju', 'root@localhost', 'root@localhost', '127.0.0.1', '2013-04-09 18:14:03', '2013-04-09 10:14:03', '已完成：http://dj.red54.com/?p=85', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
+(9, 58, 'sdju', 'root@localhost', 'root@localhost', '127.0.0.1', '2013-04-09 18:17:03', '2013-04-09 10:17:03', '已完成：http://dj.red54.com/?p=90', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
+(10, 60, 'sdju', 'root@localhost', 'root@localhost', '127.0.0.1', '2013-04-09 18:19:32', '2013-04-09 10:19:32', '已完成：http://dj.red54.com/?p=95', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1),
+(11, 62, 'sdju', 'root@localhost', 'root@localhost', '127.0.0.1', '2013-04-09 18:23:28', '2013-04-09 10:23:28', '已完成：http://dj.red54.com/?p=100', 0, '1', 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/20100101 Firefox/20.0', 'collabpress', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -558,7 +558,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (2, 'blogname', '电机魂', 'yes'),
 (3, 'blogdescription', '创新是电机的灵魂', 'yes'),
 (4, 'users_can_register', '0', 'yes'),
-(5, 'admin_email', 'dj@Red54.com', 'yes'),
+(5, 'admin_email', 'root@localhost', 'yes'),
 (6, 'start_of_week', '1', 'yes'),
 (7, 'use_balanceTags', '0', 'yes'),
 (8, 'use_smilies', '1', 'yes'),
@@ -1321,4 +1321,4 @@ CREATE TABLE IF NOT EXISTS `wp_users` (
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1, 'sdju', '$P$BLlxy6xsqqY8yUUyUEIuYvQRS7cyWe/', 'sdju', 'dj@Red54.com', '', '2013-04-09 08:29:20', '', 0, 'sdju');
+(1, 'sdju', '$P$BLlxy6xsqqY8yUUyUEIuYvQRS7cyWe/', 'sdju', 'root@localhost', '', '2013-04-09 08:29:20', '', 0, 'sdju');
