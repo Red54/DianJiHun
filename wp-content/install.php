@@ -2,8 +2,9 @@
 	global $wpdb, $wp_rewrite, $current_site, $table_prefix;
 
 	$djh_plugins = array (
-		0 => 'buddypress/bp-loader.php',
-		1 => 'collabpress/cp-loader.php',
+		0 => 'disable-wordpress-updates/disable-updates.php',
+		1 => 'buddypress/bp-loader.php',
+		2 => 'collabpress/cp-loader.php',
 	);
 
 	foreach ($djh_plugins as $plugin) {
