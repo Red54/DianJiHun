@@ -2,7 +2,7 @@
 
 安装方法与WordPress相同，可参考readme.html文件。
 
-考虑到电机魂准备用于封闭局域网，所以默认关闭所有更新检查，如有需要，请自行停用“Disable Updates”插件。
+考虑到电机魂准备用于封闭局域网，所以默认关闭所有更新检查，如有需要，请自行停用“Disable WordPress Updates”插件。
 
 
 WordPress	http://wordpress.org
