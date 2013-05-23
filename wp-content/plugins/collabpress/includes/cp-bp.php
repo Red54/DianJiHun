@@ -47,7 +47,7 @@ class CP_BP_Integration extends BP_Component {
 		add_filter( 'bp_get_template_stack', array( $this, 'add_cp_to_template_stack' ) );
 
 		// Register BP-specific taxonomies
-		$this->register_taxonomies();
+		add_action( 'cp_registered_post_types', array( &$this, 'register_taxonomies' ) );
 
 		// Set up the CP query
 		add_action( 'cp_bp_setup_item', array( &$this, 'do_cp_query' ), 5 );
@@ -65,7 +65,6 @@ class CP_BP_Integration extends BP_Component {
 		add_action( 'cp_after_advanced_settings', array( &$this, 'render_settings' ) );
 
 		// Todo: this MUST check to see whether we're in a BP context!!
-		add_filter( 'cp_calendar_permalink', array( $this, 'filter_cp_calendar_permalink' ), 10, 4 );
 		add_filter( 'post_type_link', array( &$this, 'filter_permalinks' ), 10, 4 );
 		add_filter( 'cp_task_list_link', array( &$this, 'filter_item_link' ), 10, 3 );
 		add_filter( 'cp_task_link', array( &$this, 'filter_item_link' ), 10, 3 );
@@ -233,16 +232,6 @@ class CP_BP_Integration extends BP_Component {
 		return $link;
 	}
 
-	function filter_cp_calendar_permalink( $link, $project, $year, $month ) {
-		global $cp;
-		if ( !bp_current_component() || is_admin() || is_network_admin() )
-			return $link;
-		$link = add_query_arg( array(
-			'year' => $year,
-			'month' => $month,
-			), bp_get_group_permalink( groups_get_current_group() ) . 'calendar' );
-		return $link;
-	}
 	function filter_item_link( $link, $post_id, $parent_id = false ) {
 		if ( !bp_current_component() || is_admin() || is_network_admin() )
 			return $link;
@@ -253,6 +242,8 @@ class CP_BP_Integration extends BP_Component {
 	function do_cp_query() {
 		global $cp_page;
 
+		$cp_page = new collabpress_dashboard_page();
+
 		$args = array(
 			$this->current_view => $this->current_item_id,
 			'add_meta_boxes' => false
@@ -262,6 +253,10 @@ class CP_BP_Integration extends BP_Component {
 		if ( 'task_list' == $this->current_view || 'task' == $this->current_view ) {
 			$args['project'] = get_post_meta( $this->current_item_id, '_cp-project-id', true );
 		}
+
+		$cp_page->on_load_page( $args );
+
+		//$this->maybe_load_scripts();
 	}
 
 	function get_current_item_obj_data( $type, $data ) {

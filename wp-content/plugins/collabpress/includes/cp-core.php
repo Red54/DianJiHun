@@ -6,30 +6,28 @@ do_action( 'cp_core' );
 // Install CollabPress
 register_activation_hook( __FILE__, 'cp_install' );
 
-// AJAX handlers
-require_once( CP_PLUGIN_DIR . 'includes/ajax-handlers.php' );
+// Check for Pro Version
+if ( file_exists( CP_PLUGIN_DIR . '/collabpress-pro.php' ) )
+	require_once( CP_PLUGIN_DIR . '/collabpress-pro.php' );
 
 // CollabPress Admin Init Functions
-require_once( CP_PLUGIN_DIR . 'includes/admin_init.php' );
+require_once( 'admin_init.php' );
 do_action( 'cp_after_admin_init' );
 
 // CollabPress Functions
-require_once( CP_PLUGIN_DIR . 'includes/functions.php' );
+require_once( 'functions.php' );
 do_action( 'cp_after_functions' );
 
 // Administration Menus
-require_once( CP_PLUGIN_DIR . 'includes/menus.php' );
+require_once( 'menus.php' );
 do_action( 'cp_after_menus' );
 
-// CollabPress Update
-require_once( CP_PLUGIN_DIR . 'includes/update.php' );
-
 // CollabPress shortcode support
-require_once( CP_PLUGIN_DIR . 'includes/shortcode.php' );
+require_once( 'shortcode.php' );
 do_action( 'cp_after_shortcode' );
 
 // CollabPress widgets
-require_once( CP_PLUGIN_DIR . 'includes/cp-widgets.php' );
+require_once( 'cp-widgets.php' );
 do_action( 'cp_after_widgets' );
 
 // Load BuddyPress integration, if BP is enabled
@@ -56,7 +54,7 @@ function cp_wp_add_dashboard_widgets() {
 
 }
 function cp_wp_dashboard_widget_function() {
-	//cp_recent_activity();
+	cp_recent_activity();
 }
 
 /**

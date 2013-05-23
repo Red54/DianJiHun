@@ -116,10 +116,6 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 
 			// Don't do this work unless we're on a CP page
 			if ( bp_is_current_action( $this->slug ) ) {
-				// Tell CollabPress we're on a CP page
-
-				add_filter( 'is_collabpress_page', '__return_true' );
-
 				// Set up the current item
 				$this->set_current_item();
 
@@ -128,12 +124,6 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 
 				// A less-than-ideal way to let the main CPBP class know we're done
 				do_action( 'cp_bp_setup_item' );
-
-				// Legacy permalink redirection
-				add_filter( 'bp_get_canonical_url', array( $this, 'filter_canonical_url' ), 10, 2 );
-
-				// Setup $cp global
-				add_action( 'cp_global_setup', array( $this, 'setup_cp_global' ) );
 			}
 
 			// Get the settings for create and edit/delete roles
@@ -149,7 +139,6 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 
 			// Ensure that the proper users show up on the user list dropdown
 			add_filter( 'cp_task_user_list_html', array( &$this, 'user_list_html' ), 10, 2 );
-
 		}
 
 		// Automatically provision group members to each group project
@@ -161,8 +150,6 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 		// Load the styles
 		add_action( 'wp_print_styles', array( &$this, 'enqueue_styles' ) );
 		$this->enqueue_scripts();
-
-		add_action( 'cp_project_added', array( $this, 'add_tax_data_for_new_projects' ) );
 	}
 
 	/**
@@ -328,8 +315,6 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 	 * @since 1.2
 	 */
 	function set_current_item() {
-		global $cp;
-
 		$this->current_item = array(
 			'project' 	=> '',
 			'task_list' 	=> '',
@@ -338,35 +323,19 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 
 		// If we're not on the CP tab, there's nothing to fill in
 		if ( bp_is_current_action( $this->slug ) ) {
-			$this->current_item['project'] = bp_action_variable( 0 );
-			$this->current_item['task'] = bp_action_variable( 1 );
+			$this->current_item['project']   = bp_action_variable( 0 );
+			$this->current_item['task_list'] = bp_action_variable( 1 );
+			$this->current_item['task'] 	 = bp_action_variable( 2 );
 		}
 
-		foreach ( $this->current_item as $key => $value ) {
+		foreach( $this->current_item as $key => $value ) {
 			$this->current_item[$key] = $this->sanitize_current_item_part( $value );
 		}
 
 		// Put in the global object for abstraction
 		cp_bp()->current_item = $this->current_item;
 	}
-	/**
-	 * After the $cp global has been initialized, reset some vars for BP integration
-	 *
-	 * @package CollabPress
-	 * @since 1.3
-	 */
-	function setup_cp_global() {
-		global $cp;
-		// Setup $cp global values for current items
-		if ( $this->current_item['project'] ) {
-			$project_id = get_page_by_path( $this->current_item['project'], OBJECT, 'cp-projects' );
-			$cp->project = get_post( $project_id );
-		}
-		if ( $this->current_item['task'] ) {
-			$task_id = get_page_by_path( $this->current_item['task'], OBJECT, 'cp-tasks' );
-			$cp->task = get_post( $task_id );
-		}
-	}
+
 	/**
 	 * Strip all query args off of URL parts
 	 *
@@ -645,19 +614,30 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 		// What gets displayed after the subnav depends on the current view
 		switch ( $this->current_view ) {
 			case 'project' :
-				$template = 'collabpress/buddypress/content-single-project.php';
+				$template = 'collabpress/project.php';
+				break;
+
+			case 'task_list' :
+				$template = 'collabpress/task-list.php';
 				break;
 
 			case 'task' :
-				$template = 'collabpress/buddypress/content-single-task.php';
+				$template = 'collabpress/task.php';
 				break;
 
 			case 'list' :
 			default :
-				$template = 'collabpress/buddypress/dashboard.php';
-			break;
+				$template = 'collabpress/projects-loop.php';
+				break;
 		}
-		cp_load_template( $template );
+
+		// Allow themes to override the template
+		if ( !$located_template = locate_template( $template ) ) {
+			// If no template is found, load the one from the plugin
+			$located_template = CP_PLUGIN_DIR . 'includes/templates/' . $template;
+		}
+
+		require( $located_template );
 	}
 
 	/**
@@ -684,7 +664,7 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 				<?php endif ?>
 
 				<?php if ( $task_name = cp_bp()->get_current_item_task_name() ) : ?>
-					<li<?php if ( 'task' == $this->current_view ) : ?> class="current"<?php endif; ?>><a href="<?php echo esc_html( $this->cp_link . '/' . cp_bp()->get_current_item_project_slug() . '/' . cp_bp()->get_current_item_task_slug() ) ?>"> &rarr; <?php echo $task_name ?></a></li>
+					<li<?php if ( 'task' == $this->current_view ) : ?> class="current"<?php endif; ?>><a href="<?php echo esc_html( $this->cp_link . '/' . cp_bp()->get_current_item_project_slug() . '/' . cp_bp()->get_current_item_task_list_slug() . '/' . cp_bp()->get_current_item_task_slug() ) ?>"> &rarr; <?php echo $task_name ?></a></li>
 				<?php endif ?>
 
 			<?php else : ?>
@@ -903,6 +883,18 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 	 * @return array $args The modified args
 	 */
 	function calendar_filter_task_query( $args ) {
+		$meta_query = array();
+
+		// Set up the due date meta query (translated from the default args)
+		$due_date_meta = array(
+			'key'	  => $args['meta_key'],
+			'value'	  => $args['meta_value'],
+			'compare' => '='
+		);
+
+		// Unset the old-style meta_key and meta_value args - we don't need them anymore
+		unset( $args['meta_key'] );
+		unset( $args['meta_value'] );
 
 		// Now we need to limit by projects. First, query for the group's projects.
 		$group_projects = $this->get_group_projects();
@@ -929,38 +921,9 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 		);
 
 		// Finally, put the meta queries into a single array, and put them into $args
-		$args['meta_query'][] = $projects_meta;
+		$args['meta_query'] = array( $due_date_meta, $projects_meta );
 
 		return $args;
-	}
-
-	/**
-	 * Filter the canonical BP URL.
-	 * If any pre-1.3-style CollabPress task links exist, redirect them here.
-	 *
-	 * @package CollabPress
-	 * @subpackage CP BP
-	 * @since 1.3
-	 *
-	 * @return string A canonical URL.
-	 */
-	function filter_canonical_url( $canonical_url, $args ) {
-		global $cp;
-
-		if ( is_null( $cp ) )
-			return $canonical_url;
-		// If there's something wrong
-		if ( property_exists( $cp, 'task' ) && is_null( $cp->task ) ) {
-
-			if ( bp_action_variable( 2 ) ) {
-				// redirect old permalinks for tasks e.g. /project-name/task-list-name/task-name/ to /project-name/task-name/
-				$canonical_url = bp_get_group_permalink( groups_get_current_group() ) . cp_bp_get_group_collabpress_slug() . '/' . bp_action_variable( 0 ) . '/' . bp_action_variable( 2 ) . '/';
-			} else {
-				// redirect old permalinks for task lists e.g. /project-name/task-list-name/ to /project-name/
-				$canonical_url = bp_get_group_permalink( groups_get_current_group() ) . cp_bp_get_group_collabpress_slug() . '/' . bp_action_variable( 0 ) . '/';
-			}
-		}
-		return $canonical_url;
 	}
 
 	/**
@@ -1016,39 +979,12 @@ class CP_BP_Group_Extension extends BP_Group_Extension {
 		if ( bp_is_current_action( $this->slug ) || in_array( $this->slug, (array)bp_action_variables() ) || bp_is_current_action( 'calendar' ) ) {
 			wp_enqueue_script( 'cp-bp', CP_PLUGIN_URL . 'includes/js/bp.js', array( 'jquery' ) );
 
-			// collabpress_dashboard_page::cp_admin_scripts();
-		}
-	}
-
-	/**
-	 *
-	 *
-	 */
-	function add_tax_data_for_new_projects( $project_id ) {
-		if ( ! empty( $_REQUEST['data']['group_id'] ) ) {
-			$group_id = intval( $_REQUEST['data']['group_id'] );
-			wp_set_post_terms( $project_id, $group_id, 'cp-bp-group', true );
+			collabpress_dashboard_page::cp_admin_scripts();
 		}
 	}
 }
 
 endif;
-
-function cp_bp_get_group_collabpress_slug() {
-	$cp_options = cp_get_options();
- 	$admins_can_customize = 'allow' == $cp_options['bp']['groups_admins_can_customize'];
- 	if ( $admins_can_customize ) {
-		// Pull up the group settings to see if there is a custom
-		// slug defined. Otherwise fall back on site settings
-		$group_settings = groups_get_groupmeta( bp_get_current_group_id(), 'collabpress' );
-		$slug = !empty( $group_settings['tab_slug'] ) ? $group_settings['tab_slug'] : $cp_options['bp']['groups_default_tab_slug'];
-	} else {
-		// If customization is not allowed, the slug will be the
-		// same through all groups
-		$slug = $cp_options['bp']['groups_default_tab_slug'];
-	}
-	return $slug;
-}
 
 /**
  * If a project is associated with a group, this function will catch its parent_item args
@@ -1083,7 +1019,7 @@ function cp_bp_filter_group_parent_item( $args, $item ) {
 		} else {
 			// If customization is not allowed, the slug will be the
 			// same through all groups
-			$slug = $cp_options['bp']['groups_default_tab_slug'];
+			$slug = $cp_settings['bp']['groups_default_tab_slug'];
 		}
 
 		if ( bp_get_current_group_id() == $term->name ) {
@@ -1111,6 +1047,5 @@ function cp_bp_filter_group_parent_item( $args, $item ) {
 	}
 
 	return $args;
-
 }
 add_filter( 'cp_bp_get_project_permalink_parent_item', 'cp_bp_filter_group_parent_item', 10, 2 );

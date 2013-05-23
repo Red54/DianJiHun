@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: BuddyPress 1.6.1 简体中文语言包\n"
+"Project-Id-Version: BuddyPress 1.7.2 简体中文语言包\n"
 "Report-Msgid-Bugs-To: http://wppolyglots.wordpress.com\n"
 "POT-Creation-Date: 2013-05-15 18:35:23+00:00\n"
 "PO-Revision-Date: \n"
