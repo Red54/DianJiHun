@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: CollabPress\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-30 14:35+0100\n"
-"PO-Revision-Date: 2013-05-24 04:07+0800\n"
+"PO-Revision-Date: 2013-05-24 06:55+0800\n"
 "Last-Translator: 谢致邦 <Yeking@Red54.com>\n"
 "Language-Team: 谢致邦 <Yeking@Red54.com>\n"
 "Language: zh_CN\n"
@@ -510,7 +510,7 @@ msgstr "编辑任务清单"
 
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:238
 msgid "Project Overview"
-msgstr "项目概述"
+msgstr "项目综览"
 
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:240
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:251
@@ -529,7 +529,7 @@ msgstr "编辑任务"
 
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:249
 msgid "Task List Overview"
-msgstr "任务清单概述"
+msgstr "任务清单综览"
 
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:263
 msgid "Credits"
