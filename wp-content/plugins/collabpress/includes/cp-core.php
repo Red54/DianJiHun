@@ -31,7 +31,7 @@ require_once( 'cp-widgets.php' );
 do_action( 'cp_after_widgets' );
 
 // Load BuddyPress integration, if BP is enabled
-add_action( 'bp_init', 'cp_load_bp_functions' );
+add_action( 'bp_include', 'cp_load_bp_functions' );
 
 // Add "View CollabPress Dashboard" link on plugins page
 add_filter( 'plugin_action_links_' . CP_BASENAME, 'cp_filter_plugin_actions' );
