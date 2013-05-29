@@ -1,11 +1,12 @@
+# , 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: CollabPress\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-05-30 14:35+0100\n"
-"PO-Revision-Date: 2013-05-24 06:55+0800\n"
+"PO-Revision-Date: 2013-05-29 17:20+0800\n"
 "Last-Translator: 谢致邦 <Yeking@Red54.com>\n"
-"Language-Team: 谢致邦 <Yeking@Red54.com>\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,6 +14,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: /Users/scottbasgaard/Sites/collabpress/wp-content/"
 "plugins/collabpress\n"
 
@@ -60,15 +62,15 @@ msgstr "CollabPress - 最近活动"
 
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:17
 msgid "Display CollabPress overview stats"
-msgstr "显示 CollabPress 概述统计表"
+msgstr "显示 CollabPress 综览统计表"
 
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:19
 msgid "CollabPress: Overview Widget"
-msgstr "CollabPress：概述 小工具"
+msgstr "CollabPress：综览小工具"
 
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:24
 msgid "CollabPress Overview"
-msgstr "CollabPress 概述"
+msgstr "CollabPress 综览"
 
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/cp-widgets.php:33
 msgid "Title"
@@ -489,7 +491,7 @@ msgstr "用户"
 
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:224
 msgid "Overview"
-msgstr "概述"
+msgstr "综览"
 
 #: /Users/scottbasgaard/Sites/collabpress/wp-content/plugins/collabpress/includes/menus/dashboard.php:229
 msgid "Add New Project"
